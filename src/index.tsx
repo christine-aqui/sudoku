@@ -1,13 +1,13 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import ReactDOM from 'react-dom'
-import './index.css'
-import App from './App'
 import { unregister } from './core'
+import { GlobalStyles } from './styles'
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <Fragment>
+    <GlobalStyles />
+    <div>Hello world</div>
+  </Fragment>,
   document.getElementById('root')
 )
 

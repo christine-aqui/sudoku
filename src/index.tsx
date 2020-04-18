@@ -1,13 +1,15 @@
 import React, { Fragment } from 'react'
 import ReactDOM from 'react-dom'
+import { ThemeProvider } from 'styled-components'
+
 import { unregister } from './core'
-import { GlobalStyles } from './styles'
+import { GlobalStyles, theme } from './styles'
 
 ReactDOM.render(
-  <Fragment>
+  <ThemeProvider theme={theme}>
     <GlobalStyles />
     <div>Hello world</div>
-  </Fragment>,
+  </ThemeProvider>,
   document.getElementById('root')
 )
 

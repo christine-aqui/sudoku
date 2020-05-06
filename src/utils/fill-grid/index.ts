@@ -24,6 +24,9 @@ function fillGrid(grid: GRID) {
 
     if (grid[row][col] === 0) {
       shuffle(numbers)
+      // is it not in grid row?
+      // is it not in col?
+      // is it not in the grid-square?
 
       for (let value of numbers) {
         if (!isInRow({ grid, row, value }))

@@ -11,6 +11,7 @@ export const Row = styled.div`
     display: flex;
     flex-flow: row;
 
+    /* inner lines */
     &:nth-child(1) {
       div {
         border-top: solid 4px ${theme.colors.black};

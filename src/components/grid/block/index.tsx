@@ -1,4 +1,6 @@
-import React, { FC, Children } from 'react'
+import React, { FC } from 'react'
+
+import { Container } from './styles'
 
 interface IProps {
   colIndex: number
@@ -6,12 +8,7 @@ interface IProps {
 }
 
 const Block: FC<IProps> = ({ colIndex, rowIndex }) => {
-  return (
-    <div data-cy={`block-${rowIndex}-${colIndex}`}>
-      {rowIndex}
-      {colIndex}
-    </div>
-  )
+  return <Container data-cy={`block-${rowIndex}-${colIndex}`} />
 }
 
 export default Block
